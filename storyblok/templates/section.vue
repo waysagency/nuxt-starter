@@ -10,6 +10,5 @@
 
 <script setup>
 const { blok } = defineProps({ blok: Object });
-console.log(blok);
 const articleContent = computed(() => renderRichText(blok.intro));
 </script>
