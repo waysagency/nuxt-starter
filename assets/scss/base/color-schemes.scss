@@ -1,0 +1,14 @@
+@layer base {
+  .color-scheme {
+    background-color: var(--color-scheme-background-color);
+    color: var(--color-scheme-color);
+    &--primary {
+      --color-scheme-background-color: var(--color-primary);
+      --color-scheme-color: var(--color-text-on-primary);
+    }
+    &--accent {
+      --color-scheme-background-color: var(--color-accent);
+      --color-scheme-color: var(--color-text-on-accent);
+    }
+  }
+}

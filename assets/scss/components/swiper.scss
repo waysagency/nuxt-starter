@@ -1,0 +1,9 @@
+@layer components {
+  .swiper {
+    &-button {
+      &-disabled {
+        @apply pointer-events-none cursor-auto opacity-30;
+      }
+    }
+  }
+}

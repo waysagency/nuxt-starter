@@ -1,0 +1,48 @@
+@layer components {
+  button,
+  .btn {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border-color: var(--button-border-color);
+    @apply inline-flex 
+    cursor-pointer
+    select-none
+    appearance-none 
+    items-center
+    justify-center
+    rounded-md
+    border
+    px-5
+    py-2.5
+    font-bold
+    no-underline
+    transition-colors;
+
+    &--primary {
+      --button-background-color: var(--color-primary);
+      --button-color: var(--color-text-on-primary);
+      --button-border-color: var(--color-primary);
+    }
+    &--primary-5 {
+      --button-background-color: var(--color-primary-5);
+      --button-color: var(--color-text-on-primary-5);
+      --button-border-color: var(--color-primary-5);
+    }
+    &--accent {
+      --button-background-color: var(--color-accent);
+      --button-color: var(--color-text-on-accent);
+      --button-border-color: var(--color-accent);
+    }
+    &--outline {
+      --button-background-color: theme(colors.transparent);
+      --button-color: var(--color-primary);
+      --button-border-color: var(--color-primary);
+    }
+    &--link {
+      --button-background-color: theme(colors.transparent);
+      --button-color: var(--color-link);
+      --button-border-color: theme(colors.transparent);
+      @apply p-0;
+    }
+  }
+}

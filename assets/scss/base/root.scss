@@ -1,0 +1,31 @@
+@layer base {
+  :root {
+    /* 
+     * Spacings
+     */
+    // Site side spacing
+    --site-side-spacing: theme(spacing.5);
+    --site-side-spacing-lg: theme(spacing.16);
+
+    // Container
+    --container-spacing: theme(spacing.20);
+    --container-spacing-lg: theme(spacing.32);
+
+    --container-row-spacing: theme(spacing.10);
+    --container-row-spacing-lg: theme(spacing.10);
+
+    // Element
+    --element-spacing: theme(spacing.4);
+
+    /* 
+     * Grid
+     */
+    // Col gaps
+    --grid-col-gap: theme(gap.5);
+    --grid-col-gap-lg: theme(gap.5);
+
+    // Row gaps
+    --grid-row-gap: theme(gap.5);
+    --grid-row-gap-lg: theme(gap.5);
+  }
+}

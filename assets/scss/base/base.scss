@@ -1,0 +1,42 @@
+@layer base {
+  body {
+    @apply text-primary md:text-lg;
+  }
+
+  section {
+    @apply relative;
+  }
+
+  a {
+    color: var(--color-link);
+    @apply underline underline-offset-2;
+  }
+
+  blockquote {
+    @apply italic;
+  }
+
+  p {
+    code {
+      @apply rounded bg-primary-5 py-1 px-2;
+    }
+  }
+
+  pre {
+    code {
+      @apply inline-block rounded bg-primary p-4 text-white;
+    }
+  }
+
+  ul,
+  ol {
+    @apply pl-5;
+  }
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+}

@@ -1,0 +1,24 @@
+.icon {
+  @apply block;
+  &--xxs {
+    @apply h-3 w-3;
+  }
+  &--xs {
+    @apply h-4 w-4;
+  }
+  &--sm {
+    @apply h-5 w-5;
+  }
+  &--md {
+    @apply h-6 w-6;
+  }
+  &--lg {
+    @apply h-8 w-8;
+  }
+  &--xl {
+    @apply h-12 w-12;
+  }
+  &--2xl {
+    @apply h-16 w-16;
+  }
+}

@@ -1,0 +1,31 @@
+@layer components {
+  .rte {
+    @apply space-y-6;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &:not(:first-child) {
+        @apply mt-10 #{!important};
+      }
+    }
+
+    ul {
+      @apply list-none space-y-2 pl-0;
+      li {
+        @apply flex gap-x-2;
+        &::before {
+          content: "";
+          @apply block h-6 w-6 shrink-0 bg-accent;
+        }
+      }
+    }
+    &--horizontal-list {
+      ul {
+        @apply md:flex md:flex-wrap md:justify-between md:gap-8 md:space-y-0;
+      }
+    }
+  }
+}

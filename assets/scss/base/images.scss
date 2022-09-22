@@ -1,0 +1,7 @@
+@layer base {
+  picture {
+    img {
+      @apply h-full w-full object-cover;
+    }
+  }
+}

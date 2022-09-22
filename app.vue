@@ -1,6 +1,5 @@
 <script setup>
 const story = await useAsyncStoryblok("/home", { version: "draft" });
-console.log(story.value);
 </script>
 
 <template>
