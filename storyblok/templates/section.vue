@@ -1,16 +1,15 @@
 <template>
-  <div>
+  <div v-editable="blok">
     <h1>{{ blok.heading }}</h1>
     <div v-html="articleContent"></div>
-    <button :class="`btn ${blok.button_type}`">{{ blok.button_label }}</button>
-    <pre>
-      {{ blok }}
-    </pre>
+    <nuxt-link :to="`/${blok.button_link?.cached_url}`" :class="`btn ${blok.button_type}`">
+      {{ blok.button_label }}
+    </nuxt-link>
   </div>
 </template>
 
 <script setup>
 const { blok } = defineProps({ blok: Object });
-
+console.log(blok);
 const articleContent = computed(() => renderRichText(blok.intro));
 </script>
