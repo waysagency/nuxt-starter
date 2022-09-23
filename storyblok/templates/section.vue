@@ -6,7 +6,7 @@
       {{ blok.button_label }}
     </nuxt-link>
 
-    <StoryblokComponent v-for="blok in blok.content" :key="blok._uid" :blok="blok" :story="story" />
+    <StoryblokComponent v-for="blok in blok.content" :key="blok._uid" :story="story" :blok="blok" />
   </div>
 </template>
 
