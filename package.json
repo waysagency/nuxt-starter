@@ -2,6 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "npx nuxi dev -o --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "pull-components": "storyblok pull-components --space=167762",
+    "push-components": "storyblok push-components components.167762.json --space=167762",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

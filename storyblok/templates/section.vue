@@ -6,11 +6,11 @@
       {{ blok.button_label }}
     </nuxt-link>
 
-    <StoryblokComponent v-for="blok in blok.content" :key="blok._uid" :blok="blok" />
+    <StoryblokComponent v-for="blok in blok.content" :key="blok._uid" :blok="blok" :story="story" />
   </div>
 </template>
 
 <script setup>
-const { blok } = defineProps({ blok: Object });
+const { story, blok } = defineProps({ story: Object, blok: Object });
 const articleContent = computed(() => renderRichText(blok.intro));
 </script>

@@ -5,5 +5,5 @@ const story = await useStoryblok(path, { version: "draft" });
 </script>
 
 <template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
+  <StoryblokComponent v-if="story" :blok="story.content" :story="story" />
 </template>
