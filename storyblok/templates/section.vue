@@ -5,6 +5,8 @@
     <nuxt-link :to="`/${blok.button_link?.cached_url}`" :class="`btn ${blok.button_type}`">
       {{ blok.button_label }}
     </nuxt-link>
+
+    <StoryblokComponent v-for="blok in blok.content" :key="blok._uid" :blok="blok" />
   </div>
 </template>
 
