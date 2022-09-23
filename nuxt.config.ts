@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 
   storyblok: {
     accessToken: "mKwjuAbZCYZrCyrrQoutzgtt",
+    useApiClient: true,
   },
 
   tailwindcss: {

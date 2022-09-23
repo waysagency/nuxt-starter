@@ -16,6 +16,6 @@
     "sass-loader": "^13.0.2"
   },
   "dependencies": {
-    "@storyblok/nuxt": "^4.4.1"
+    "@storyblok/nuxt": "^4.3.0"
   }
 }
