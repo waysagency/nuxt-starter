@@ -4,19 +4,16 @@
     my-[var(--container-spacing)] 
     grid
     grid-cols-4
-    gap-x-[var(--grid-col-gap)]
+    gap-x-[var(--col-gap)]
     gap-y-0
     space-y-[var(--container-row-spacing)]
     px-[var(--site-side-spacing)];
     @screen lg {
       @apply my-[var(--container-spacing-lg)] 
       grid-cols-12
-      gap-x-[var(--grid-col-gap-lg)]
+      gap-x-[var(--col-gap-lg)]
       space-y-[var(--container-row-spacing-lg)]
       px-[var(--site-side-spacing-lg)];
-    }
-    &--block {
-      @apply my-0;
     }
     &--background {
       @apply py-[var(--container-spacing)];
@@ -35,7 +32,7 @@
         }
       }
     }
-    &__summary {
+    &__intro {
       @apply col-span-4 lg:col-span-8 lg:col-start-3;
     }
     &__main {

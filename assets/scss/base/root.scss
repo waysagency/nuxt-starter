@@ -18,14 +18,14 @@
     --element-spacing: theme(spacing.4);
 
     /* 
-     * Grid
+     * Grid/Flex
      */
     // Col gaps
-    --grid-col-gap: theme(gap.5);
-    --grid-col-gap-lg: theme(gap.5);
+    --col-gap: theme(gap.5);
+    --col-gap-lg: theme(gap.5);
 
     // Row gaps
-    --grid-row-gap: theme(gap.5);
-    --grid-row-gap-lg: theme(gap.5);
+    --row-gap: theme(gap.5);
+    --row-gap-lg: theme(gap.5);
   }
 }

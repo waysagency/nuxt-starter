@@ -1,10 +1,10 @@
 @layer components {
   .grid {
-    @apply gap-x-[var(--grid-col-gap)]
-    gap-y-[var(--grid-row-gap)];
+    @apply gap-x-[var(--col-gap)]
+    gap-y-[var(--row-gap)];
     @screen lg {
-      @apply gap-x-[var(--grid-col-gap-lg)]
-      gap-y-[var(--grid-row-gap-lg)];
+      @apply gap-x-[var(--col-gap-lg)]
+      gap-y-[var(--row-gap-lg)];
     }
   }
 }

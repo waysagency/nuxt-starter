@@ -1,0 +1,6 @@
+@layer components {
+  .flex {
+    @apply gap-x-[var(--col-gap)]
+    gap-y-[var(--row-gap)];
+  }
+}

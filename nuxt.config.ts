@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     "@storyblok/nuxt",
     // https://tailwindcss.nuxtjs.org/
     "@nuxtjs/tailwindcss",
+    // https://v1.image.nuxtjs.org/
+    "@nuxt/image-edge",
   ],
 
   storyblok: {
@@ -18,5 +20,19 @@ export default defineNuxtConfig({
 
   tailwindcss: {
     cssPath: "~/assets/scss/tailwind.scss",
+  },
+
+  image: {
+    screens: {
+      xs: 360,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1440,
+    },
+    storyblok: {
+      baseURL: "https://a.storyblok.com",
+    },
   },
 });
