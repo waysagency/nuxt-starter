@@ -18,8 +18,10 @@ const sectionOptions = reactive({
 </script>
 
 <style lang="scss" scoped>
-.swiper-slide {
-  @apply w-[420px];
+.swiper {
+  &-slide {
+    @apply w-[420px];
+  }
 }
 </style>
 
