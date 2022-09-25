@@ -1,40 +1,6 @@
 <script setup>
 const { options } = defineProps({ options: Object });
 const slots = useSlots();
-
-// const sectionComponent = computed(() => {
-//   return blok?.component ? `component--${blok.component}` : false;
-// });
-
-// const articleContent = ref("");
-// if (blok?.intro) {
-//   if (typeof blok?.intro === "object") {
-//     articleContent.value = renderRichText(blok?.intro);
-//   } else {
-//     articleContent.value = blok?.intro;
-//   }
-// }
-
-// const columnWidth = computed(() => {
-//   switch (blok?.column_width) {
-//     case "2":
-//       return "lg:col-start-6 lg:col-span-2";
-//     case "4":
-//       return "lg:col-start-5 lg:col-span-4";
-//     case "6":
-//       return "lg:col-start-4 lg:col-span-6";
-//     case "8":
-//       return "lg:col-start-3 lg:col-span-8";
-//     case "10":
-//       return "lg:col-start-2 lg:col-span-10";
-//   }
-// });
-
-// const backgroundShape = computed(() => {
-//   if (blok?.enable_background_shape) {
-//     return "lg:py-16 lg:before:absolute lg:before:inset-0 lg:before:inset-x-16 lg:before:-z-10 lg:before:mx-auto lg:before:max-w-screen-2xl lg:before:bg-primary-5";
-//   }
-// });
 </script>
 
 <template>
@@ -52,7 +18,11 @@ const slots = useSlots();
         <slot />
       </div>
 
-      <!-- <div class="container__footer"></div> -->
+      <div class="container__footer" v-if="options.buttonLink && options.buttonLabel">
+        <format-link :link="options.buttonLink" class="btn btn--link">
+          {{ options.buttonLabel }}
+        </format-link>
+      </div>
     </div>
   </section>
   <!-- <section :class="sectionComponent">

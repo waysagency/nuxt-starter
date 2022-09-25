@@ -31,9 +31,7 @@ if (typeof props.link === "string") {
       break;
 
     case "url":
-      link.value = !cached_url.includes("http")
-        ? `http://${cached_url}`
-        : cached_url;
+      link.value = !cached_url.includes("http") ? `http://${cached_url}` : cached_url;
       target.value = "_blank";
       break;
   }
