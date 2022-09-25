@@ -1,9 +1,11 @@
 @layer components {
   .grid {
-    @apply gap-x-[var(--col-gap)]
+    @apply grid-cols-4 
+    gap-x-[var(--col-gap)] 
     gap-y-[var(--row-gap)];
     @screen lg {
-      @apply gap-x-[var(--col-gap-lg)]
+      @apply grid-cols-12
+      gap-x-[var(--col-gap-lg)]
       gap-y-[var(--row-gap-lg)];
     }
   }
