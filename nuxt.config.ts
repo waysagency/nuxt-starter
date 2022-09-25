@@ -35,4 +35,8 @@ export default defineNuxtConfig({
       baseURL: "https://a.storyblok.com",
     },
   },
+
+  build: {
+    transpile: ["swiper"],
+  },
 });
