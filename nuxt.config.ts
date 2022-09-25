@@ -4,6 +4,8 @@ export default defineNuxtConfig({
     shim: false,
   },
 
+  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
+
   modules: [
     // https://github.com/storyblok/storyblok-nuxt
     "@storyblok/nuxt",
@@ -37,6 +39,6 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ["swiper"],
+    transpile: ["@fortawesome", "swiper"],
   },
 });

@@ -41,7 +41,7 @@ const {
         :space-between="20"
         navigation
       >
-        <swiper-slide v-for="(story, index) in stories" :key="index">
+        <swiper-slide v-for="(story, index) in stories" :key="index" class="mr-5">
           <nuxt-link
             :to="`/${story.full_slug}`"
             class="color-scheme color-scheme--primary group relative flex aspect-video w-52 items-center justify-center overflow-hidden p-4 text-center no-underline md:aspect-square"

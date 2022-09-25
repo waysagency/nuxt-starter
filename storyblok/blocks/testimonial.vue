@@ -19,11 +19,7 @@
           height="64"
           v-if="blok.avatar && blok.avatar.filename"
         />
-        <!-- <font-awesome-icon
-          v-else
-          icon="fa-solid fa-user text-primary-5"
-          size="lg"
-        /> -->
+        <font-awesome-icon v-else icon="fa-solid fa-user text-primary-5" size="lg" />
       </div>
     </div>
 
