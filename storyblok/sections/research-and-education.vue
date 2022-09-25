@@ -11,6 +11,6 @@ const sectionOptions = reactive({
 
 <template>
   <format-section v-editable="blok" :options="sectionOptions">
-    <StoryblokComponent v-for="blok in blok.blocks" :key="blok._uid" :blok="blok" />
+    <StoryblokComponent v-for="blok in blok.rows" :key="blok._uid" :blok="blok" />
   </format-section>
 </template>
