@@ -29,11 +29,11 @@ const {
 
 <template>
   <div v-editable="blok" class="grid">
-    <div class="lg:col-span-10 lg:col-start-2">
+    <div class="col-span-4 lg:col-span-10 lg:col-start-2">
       <h3 class="h4 text-center">{{ blok.heading }}</h3>
     </div>
 
-    <div class="lg:col-span-10 lg:col-start-2">
+    <div class="col-span-4 lg:col-span-10 lg:col-start-2">
       <swiper
         :modules="[Navigation, A11y]"
         slides-per-view="auto"

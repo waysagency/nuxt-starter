@@ -1,8 +1,6 @@
 <template>
   <footer class="color-scheme color-scheme--primary">
-    <div
-      class="container--block container--background container gap-y-8 space-y-0 py-6"
-    >
+    <div class="container--background container my-0 gap-y-8 space-y-0 py-6">
       <!-- Logo -->
       <div class="col-span-4 lg:col-span-12">
         <nuxt-link to="/" class="inline-block">
@@ -14,15 +12,13 @@
       <div class="col-span-4 lg:col-span-4">
         <p class="h5 mb-4">The Hague AI & Data Science</p>
         <p class="">
-          We are the Heart of AI & Data Science in the Hague! Tortor, malesuada
-          laoreet hendrerit sed.
+          We are the Heart of AI & Data Science in the Hague! Tortor, malesuada laoreet hendrerit
+          sed.
         </p>
       </div>
 
       <!-- Main menu -->
-      <div
-        class="col-span-4 sm:col-span-2 lg:col-span-2 lg:col-start-7 lg:row-span-2"
-      >
+      <div class="col-span-4 sm:col-span-2 lg:col-span-2 lg:col-start-7 lg:row-span-2">
         <nav>
           <ul class="list-none space-y-2 p-0">
             <li v-for="(item, index) in mainMenu" :key="index">
@@ -38,9 +34,7 @@
       </div>
 
       <!-- Footer menu -->
-      <div
-        class="col-span-4 sm:col-span-2 lg:col-span-2 lg:col-start-11 lg:row-span-2"
-      >
+      <div class="col-span-4 sm:col-span-2 lg:col-span-2 lg:col-start-11 lg:row-span-2">
         <nav>
           <ul class="list-none space-y-2 p-0">
             <li v-for="(item, index) in footerMenu" :key="index">
@@ -57,10 +51,7 @@
 
       <!-- Contact info -->
       <div class="col-span-4">
-        <ul
-          class="flex list-none flex-col gap-y-2.5 p-0"
-          v-if="contact_email || contact_phone"
-        >
+        <ul class="flex list-none flex-col gap-y-2.5 p-0" v-if="contact_email || contact_phone">
           <template v-for="(item, index) in contact" :key="index">
             <li class="group" :class="item.link" v-if="item.link">
               <nuxt-link
@@ -96,10 +87,7 @@
                 target="_blank"
                 class="flex h-9 w-9 items-center justify-center bg-primary-5 text-primary group-odd:clip-path-polygon-2 group-even:clip-path-polygon-1 states:bg-accent"
               >
-                <font-awesome-icon
-                  :icon="`fa-brands ${social.icon}`"
-                  size="lg"
-                />
+                <font-awesome-icon :icon="`fa-brands ${social.icon}`" size="lg" />
               </nuxt-link>
             </li>
           </template>
