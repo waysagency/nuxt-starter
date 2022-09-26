@@ -7,7 +7,10 @@ const slots = useSlots();
   <section>
     <div class="container" :class="options?.containerClass">
       <div class="container__heading" v-if="options?.heading">
-        <h2 v-if="options?.heading" :class="options?.headingClass">{{ options?.heading }}</h2>
+        <h1 v-if="options?.headingElement === 'h1'" :class="options?.headingClass">
+          {{ options?.heading }}
+        </h1>
+        <h2 v-else :class="options?.headingClass">{{ options?.heading }}</h2>
       </div>
 
       <div class="container__intro" v-if="options?.intro">
