@@ -21,6 +21,27 @@
         @apply py-[var(--container-spacing-lg)];
       }
     }
+    &--margin {
+      &-top-small {
+        margin-top: calc(var(--container-spacing) / 2);
+        @screen lg {
+          margin-top: calc(var(--container-spacing-lg) / 2);
+        }
+      }
+      &-small {
+        margin-block: calc(var(--container-spacing) / 2);
+        @screen lg {
+          margin-blok: calc(var(--container-spacing-lg) / 2);
+        }
+      }
+      &-bottom-small {
+        margin-bottom: calc(var(--container-spacing) / 2);
+        @screen lg {
+          margin-bottom: calc(var(--container-spacing-lg) / 2);
+        }
+      }
+    }
+
     &__heading {
       @apply col-span-4 lg:col-span-10 lg:col-start-2;
       &.text {

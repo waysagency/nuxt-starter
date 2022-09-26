@@ -13,6 +13,10 @@ module.exports = {
     // Headings
     "h2",
     "h3",
+    // Container reduce
+    "container--margin-top-small",
+    "container--margin-small",
+    "container--margin-bottom-small",
     // Text align
     "text-left",
     "text-center",

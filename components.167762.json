@@ -7,6 +7,33 @@
       "updated_at": "2022-09-26T18:44:12.597Z",
       "id": 2950457,
       "schema": {
+        "reduce_container_spacing": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 0,
+          "options": [
+            {
+              "_uid": "af3510a1-3489-489b-9b36-38f10c04b048",
+              "value": "",
+              "name": "Don't reduce"
+            },
+            {
+              "_uid": "78113954-8951-479e-a294-813d60128a26",
+              "name": "Top",
+              "value": "container--margin-top-small"
+            },
+            {
+              "_uid": "45aae4fa-7f2e-454f-b5aa-9d1469eb1bdd",
+              "value": "container--margin-small",
+              "name": "Top and bottom"
+            },
+            {
+              "_uid": "e4fb3d83-1bf3-46bd-ab59-b60ec883e07d",
+              "value": "container--margin-bottom-small",
+              "name": "Bottom"
+            }
+          ]
+        },
         "heading": {
           "type": "text",
           "pos": 0
@@ -286,7 +313,7 @@
       "name": "icon-box",
       "display_name": null,
       "created_at": "2022-09-26T15:09:03.160Z",
-      "updated_at": "2022-09-26T15:09:21.383Z",
+      "updated_at": "2022-09-26T19:16:28.437Z",
       "id": 2950162,
       "schema": {
         "icon": {
@@ -353,6 +380,33 @@
       "updated_at": "2022-09-26T15:09:48.748Z",
       "id": 2950161,
       "schema": {
+        "reduce_container_spacing": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 0,
+          "options": [
+            {
+              "_uid": "af3510a1-3489-489b-9b36-38f10c04b048",
+              "value": "",
+              "name": "Don't reduce"
+            },
+            {
+              "_uid": "78113954-8951-479e-a294-813d60128a26",
+              "name": "Top",
+              "value": "container--margin-top-small"
+            },
+            {
+              "_uid": "45aae4fa-7f2e-454f-b5aa-9d1469eb1bdd",
+              "value": "container--margin-small",
+              "name": "Top and bottom"
+            },
+            {
+              "_uid": "e4fb3d83-1bf3-46bd-ab59-b60ec883e07d",
+              "value": "container--margin-bottom-small",
+              "name": "Bottom"
+            }
+          ]
+        },
         "boxes": {
           "type": "bloks",
           "restrict_type": "",
@@ -368,6 +422,86 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "icon-boxes",
+      "component_group_uuid": "385fd9e9-fde0-440c-a8ba-896324e35e56",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Sections"
+    },
+    {
+      "name": "image",
+      "display_name": null,
+      "created_at": "2022-09-26T19:32:40.369Z",
+      "updated_at": "2022-09-26T19:32:52.065Z",
+      "id": 2950658,
+      "schema": {
+        "image": {
+          "type": "asset",
+          "filetypes": ["images"]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "image",
+      "component_group_uuid": "e69d9947-e467-49ed-890d-d831f649b15f",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Blocks"
+    },
+    {
+      "name": "image-columns",
+      "display_name": null,
+      "created_at": "2022-09-26T19:32:31.894Z",
+      "updated_at": "2022-09-26T19:54:53.112Z",
+      "id": 2950657,
+      "schema": {
+        "reduce_container_spacing": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 0,
+          "options": [
+            {
+              "_uid": "af3510a1-3489-489b-9b36-38f10c04b048",
+              "value": "",
+              "name": "Don't reduce"
+            },
+            {
+              "_uid": "78113954-8951-479e-a294-813d60128a26",
+              "name": "Top",
+              "value": "container--margin-top-small"
+            },
+            {
+              "_uid": "45aae4fa-7f2e-454f-b5aa-9d1469eb1bdd",
+              "value": "container--margin-small",
+              "name": "Top and bottom"
+            },
+            {
+              "_uid": "e4fb3d83-1bf3-46bd-ab59-b60ec883e07d",
+              "value": "container--margin-bottom-small",
+              "name": "Bottom"
+            }
+          ]
+        },
+        "images": {
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": ["image"],
+          "pos": 1
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "image-columns",
       "component_group_uuid": "385fd9e9-fde0-440c-a8ba-896324e35e56",
       "color": null,
       "icon": null,
@@ -690,9 +824,36 @@
       "name": "text",
       "display_name": null,
       "created_at": "2022-09-26T15:13:30.616Z",
-      "updated_at": "2022-09-26T15:20:37.477Z",
+      "updated_at": "2022-09-26T19:58:57.617Z",
       "id": 2950165,
       "schema": {
+        "reduce_container_spacing": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 0,
+          "options": [
+            {
+              "_uid": "af3510a1-3489-489b-9b36-38f10c04b048",
+              "value": "",
+              "name": "Don't reduce"
+            },
+            {
+              "_uid": "78113954-8951-479e-a294-813d60128a26",
+              "name": "Top",
+              "value": "container--margin-top-small"
+            },
+            {
+              "_uid": "45aae4fa-7f2e-454f-b5aa-9d1469eb1bdd",
+              "value": "container--margin-small",
+              "name": "Top and bottom"
+            },
+            {
+              "_uid": "e4fb3d83-1bf3-46bd-ab59-b60ec883e07d",
+              "value": "container--margin-bottom-small",
+              "name": "Bottom"
+            }
+          ]
+        },
         "heading": {
           "type": "text"
         },

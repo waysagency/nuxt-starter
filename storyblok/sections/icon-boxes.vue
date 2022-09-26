@@ -1,9 +1,13 @@
 <script setup>
-defineProps({ blok: Object });
+const { blok } = defineProps({ blok: Object });
+
+const sectionOptions = reactive({
+  containerClass: blok.reduce_container_spacing,
+});
 </script>
 
 <template>
-  <format-section v-editable="blok">
+  <format-section v-editable="blok" :options="sectionOptions">
     <div class="grid grid-cols-4 gap-y-12 md:grid-cols-12">
       <StoryblokComponent
         v-for="blok in blok.boxes"
