@@ -29,8 +29,6 @@ const {
   version: "draft",
   starts_with: `${story.full_slug}team`,
 });
-
-console.log(persons);
 </script>
 
 <template>
