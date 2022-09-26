@@ -3,7 +3,9 @@ const { blok } = defineProps({ blok: Object });
 
 const sectionOptions = reactive({
   heading: blok.heading,
-  intro: blok.text,
+  headingClass: [blok.heading_size, blok.heading_alignment],
+  buttonLabel: blok.button_label,
+  buttonLink: blok.button_link,
 });
 </script>
 

@@ -7,11 +7,11 @@ const slots = useSlots();
   <section>
     <div class="container" :class="options.containerClass">
       <div class="container__heading" v-if="options.heading">
-        <h2 v-if="options.heading">{{ options.heading }}</h2>
+        <h2 v-if="options.heading" :class="options.headingClass">{{ options.heading }}</h2>
       </div>
 
       <div class="container__intro" v-if="options.intro">
-        <format-rich-text :text="options.intro" />
+        <format-rich-text :text="options.intro" :class="options.introClass" />
       </div>
 
       <div class="container__main" :class="options.containerMainClass" v-if="slots.default">

@@ -10,24 +10,13 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
   ],
   safelist: [
-    // Container
-    "container",
-    "container--wide",
-    // Color scheme
-    "color-scheme",
-    "color-scheme--primary",
-    "color-scheme--accent",
-    // Button
-    "btn",
-    "btn--primary",
-    "btn--accent",
-    "btn--outline",
+    // Headings
+    "h2",
+    "h3",
     // Text align
     "text-left",
     "text-center",
     "text-right",
-    // Swiper
-    "swiper-button-disabled",
   ],
   theme: {
     colors: {
