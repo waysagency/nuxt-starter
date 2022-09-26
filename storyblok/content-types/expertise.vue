@@ -35,7 +35,8 @@ console.log(persons);
 
 <template>
   <format-section :options="sectionOptionsHero" />
-  <format-section>
+
+  <format-section v-if="blok.images.length > 0">
     <swiper
       :modules="[Navigation, A11y]"
       :slides-per-view="1.25"
@@ -59,6 +60,7 @@ console.log(persons);
       </swiper-slide>
     </swiper>
   </format-section>
+
   <format-section :options="sectionOptionsTeam">
     <div class="grid">
       <div class="col-span-4 grid lg:col-span-8 lg:col-start-3 lg:grid-cols-8">
