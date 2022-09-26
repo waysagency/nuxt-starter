@@ -3,7 +3,7 @@ defineProps({ blok: Object });
 </script>
 
 <template>
-  <div class="aspect-[4/3] w-1/4">
+  <div v-editable="blok" class="aspect-[4/3]">
     <format-image v-editable="blok" :image="blok.image" />
   </div>
 </template>
