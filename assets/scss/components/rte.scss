@@ -1,19 +1,23 @@
 @layer components {
   .rte {
-    @apply space-y-6;
+    & > * {
+      @apply col-span-4 lg:col-span-8 lg:col-start-3;
+    }
+
     h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
+      @apply col-span-4 lg:col-span-10 lg:col-start-2;
       &:not(:first-child) {
         @apply mt-10 #{!important};
       }
     }
 
     ul {
-      @apply list-none space-y-2 pl-0;
+      @apply flex list-none flex-wrap justify-between gap-5 pl-0;
       li {
         @apply flex gap-x-2;
         &::before {
