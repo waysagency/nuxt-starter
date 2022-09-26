@@ -11,7 +11,7 @@ const slots = useSlots();
       </div>
 
       <div class="container__intro" v-if="options.intro">
-        <format-rich-text :text="options.intro" :class="options.introClass" />
+        <format-rich-text :text="options.intro" :class="options.introClass" class="grid" />
       </div>
 
       <div class="container__main" :class="options.containerMainClass" v-if="slots.default">

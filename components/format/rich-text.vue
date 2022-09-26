@@ -5,5 +5,5 @@ const richText = computed(() => renderRichText(text));
 </script>
 
 <template>
-  <div v-html="richText" class="rte grid"></div>
+  <div v-html="richText" class="rte"></div>
 </template>
