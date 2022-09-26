@@ -5,30 +5,30 @@ const slots = useSlots();
 
 <template>
   <section>
-    <div class="container" :class="options.containerClass">
-      <div class="container__heading" v-if="options.heading">
-        <h2 v-if="options.heading" :class="options.headingClass">{{ options.heading }}</h2>
+    <div class="container" :class="options?.containerClass">
+      <div class="container__heading" v-if="options?.heading">
+        <h2 v-if="options?.heading" :class="options?.headingClass">{{ options?.heading }}</h2>
       </div>
 
-      <div class="container__intro" v-if="options.intro">
-        <format-rich-text :text="options.intro" :class="options.introClass" class="grid" />
+      <div class="container__intro" v-if="options?.intro">
+        <format-rich-text :text="options?.intro" :class="options?.introClass" class="grid" />
       </div>
 
-      <div class="container__main" :class="options.containerMainClass" v-if="slots.default">
+      <div class="container__main" :class="options?.containerMainClass" v-if="slots.default">
         <slot />
       </div>
 
       <div
         class="container__footer"
-        :class="options.footerClass"
-        v-if="options.buttonLink && options.buttonLabel"
+        :class="options?.footerClass"
+        v-if="options?.buttonLink && options?.buttonLabel"
       >
         <format-link
-          :link="options.buttonLink"
+          :link="options?.buttonLink"
           class="btn"
-          :class="options.buttonType ? options.buttonType : 'btn--link'"
+          :class="options?.buttonType ? options?.buttonType : 'btn--link'"
         >
-          {{ options.buttonLabel }}
+          {{ options?.buttonLabel }}
         </format-link>
       </div>
     </div>
