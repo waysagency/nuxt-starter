@@ -28,7 +28,7 @@ const {
 </style>
 
 <template>
-  <div v-editable="blok" class="grid">
+  <div v-editable="blok" class="grid" v-if="stories.length > 0">
     <div class="col-span-4 lg:col-span-10 lg:col-start-2">
       <h3 class="h4 text-center">{{ blok.heading }}</h3>
     </div>
