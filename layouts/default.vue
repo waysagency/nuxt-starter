@@ -1,7 +1,9 @@
 <template>
   <div>
     <site-header />
-    <slot />
+    <main>
+      <slot />
+    </main>
     <site-footer />
   </div>
 </template>
