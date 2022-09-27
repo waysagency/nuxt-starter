@@ -1,6 +1,18 @@
 @layer base {
   :root {
     /* 
+     * Colors
+     */
+    --color-primary: theme(colors.primary.DEFAULT);
+    --color-text-on-primary: theme(colors.primary.5);
+    --color-primary-5: theme(colors.primary.5);
+    --color-text-on-primary-5: theme(colors.primary.DEFAULT);
+    --color-accent: theme(colors.accent.DEFAULT);
+    --color-text-on-accent: theme(colors.primary.5);
+
+    --color-link: theme(colors.accent.DEFAULT);
+
+    /* 
      * Spacings
      */
     // Site side spacing

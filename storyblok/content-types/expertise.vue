@@ -56,4 +56,6 @@ const {
       </div>
     </div>
   </format-section>
+
+  <StoryblokComponent v-for="project in blok.projects" :key="project._uid" :blok="project" />
 </template>
