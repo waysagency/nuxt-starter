@@ -31,7 +31,7 @@
       &-small {
         margin-block: calc(var(--container-spacing) / 2);
         @screen lg {
-          margin-blok: calc(var(--container-spacing-lg) / 2);
+          margin-block: calc(var(--container-spacing-lg) / 2);
         }
       }
       &-bottom-small {
