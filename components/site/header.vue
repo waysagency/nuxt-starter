@@ -17,7 +17,7 @@
             <li v-for="(item, index) in mainMenu" :key="index">
               <format-link
                 :link="item.link"
-                class="inline-block py-[19.5px] px-4 text-base leading-none text-primary-alpha-40 no-underline states:text-accent"
+                class="inline-block py-[19.5px] px-4 text-base uppercase leading-none text-primary-alpha-40 no-underline states:text-accent"
               >
                 {{ item.label }}
               </format-link>
