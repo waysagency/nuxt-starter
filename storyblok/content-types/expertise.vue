@@ -12,12 +12,18 @@ import "swiper/css/navigation";
 const { story, blok } = defineProps({ story: Object, blok: Object });
 
 const sectionOptionsHero = reactive({
+  containerClass: "container--margin-bottom-small",
   headingElement: "h1",
   heading: story.name,
   intro: blok.text,
 });
 
+const sectionOptionsImages = reactive({
+  containerClass: "container--margin-small",
+});
+
 const sectionOptionsTeam = reactive({
+  containerClass: "container--margin-small",
   heading: "Health research team",
   headingClass: "h4 text-center",
 });
@@ -34,29 +40,8 @@ const {
 <template>
   <format-section :options="sectionOptionsHero" />
 
-  <format-section v-if="blok.images.length > 0">
-    <swiper
-      :modules="[Navigation, A11y]"
-      :slides-per-view="1.25"
-      center-insufficient-slides
-      navigation
-      :space-between="20"
-      :breakpoints="{
-        640: {
-          slidesPerView: 2.25,
-        },
-        768: {
-          slidesPerView: 3.25,
-        },
-        768: {
-          slidesPerView: 4.25,
-        },
-      }"
-    >
-      <swiper-slide v-for="blok in blok.images" :key="blok._uid" class="mr-5">
-        <StoryblokComponent :blok="blok" />
-      </swiper-slide>
-    </swiper>
+  <format-section :options="sectionOptionsImages" v-if="blok.images.length > 0">
+    <image-swiper :images="blok.images" />
   </format-section>
 
   <format-section :options="sectionOptionsTeam">
