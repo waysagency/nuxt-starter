@@ -16,8 +16,10 @@ const sectionOptionsResearch = reactive({
   intro: blok.research_text,
 });
 
-// const about_text = computed(() => renderRichText(blok.about_text));
-// const about_text_2 = computed(() => renderRichText(blok.about_text_2));
+const sectionOptionsTestimonials = reactive({
+  heading: blok.testimonials_heading,
+  headingClass: "h3 text-center",
+});
 
 // const storyblokApi = useStoryblokApi();
 // const {
@@ -77,4 +79,8 @@ const sectionOptionsResearch = reactive({
       <StoryblokComponent :blok="row" />
     </format-section>
   </template>
+
+  <format-section v-editable="blok" :options="sectionOptionsTestimonials">
+    <section-testimonials :blok="blok" />
+  </format-section>
 </template>

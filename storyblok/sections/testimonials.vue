@@ -27,14 +27,6 @@ const sectionOptions = reactive({
 
 <template>
   <format-section v-editable="blok" :options="sectionOptions">
-    <swiper :modules="[Navigation, A11y]" navigation slides-per-view="auto" :space-between="20">
-      <swiper-slide
-        v-for="(testimonial, index) in blok.testimonials"
-        :key="testimonial._uid"
-        class="mr-5"
-      >
-        <StoryblokComponent :blok="testimonial" />
-      </swiper-slide>
-    </swiper>
+    <section-testimonials :blok="blok" />
   </format-section>
 </template>
