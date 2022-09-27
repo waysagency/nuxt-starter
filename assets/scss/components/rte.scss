@@ -31,5 +31,8 @@
         @apply md:flex md:flex-wrap md:justify-between md:gap-8 md:space-y-0;
       }
     }
+    img {
+      @apply w-full;
+    }
   }
 }
